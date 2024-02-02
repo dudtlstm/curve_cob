@@ -81,7 +81,7 @@
 
 .bottom-text {
     line-height: 3rem;
-    padding: 2rem;
+    padding: 0rem 2rem 2rem;
     text-align: center;
     font-size: 2rem;
 }
@@ -109,6 +109,11 @@
     padding: 5rem 10rem 20rem;
     margin: 0 auto;
     display: block;
+}
+
+.aboutImage {
+    width: 85%;
+    padding: 0 10rem 10rem;
 }
 
 /* .feature-box {

@@ -1,5 +1,5 @@
 .nav {
-    margin: 3vw 2vw; /* Rem으로 전환 */
+    margin: 1rem 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -7,14 +7,14 @@
 }
 
 .logoImage {
-    height: 2vw; /* 화면 너비에 따라 크기 조절 */
+    height: 1.5rem;
 }
 
 .links a {
-    margin: 0 1vw; /* Rem으로 전환 */
+    margin: 0 1rem;
     text-decoration: none;
     color: black;
-    font-size: 1.25vw; /* 화면 너비에 따라 크기 조절 */
+    font-size: 1.25rem;
     font-family: 'OneMobileTitle';
 }
 
@@ -23,13 +23,12 @@
     text-decoration: none;
 }
 
-/* 미디어 쿼리를 사용하여 다양한 화면 크기에 대응 */
 @media (max-width: 768px) {
     .links a {
-        font-size: 2vw; /* 화면이 작을 때 글꼴 크기 증가 */
+        font-size: 2rem;
     }
 
     .logoImage {
-        height: 3vw; /* 화면이 작을 때 로고 크기 증가 */
+        height: 3rem;
     }
 }

@@ -1,23 +1,20 @@
 // src/router.js
 import React, { lazy, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
-import MainPage from "./pages/MainPage";
-import Loading from "./components/loading/loading";
+import Main from "./pages/MainPage";
+import Landing from "./pages/LandingPage";
 import Simulation from "./pages/Simulation";
 import Solution from "./pages/Solution";
+import Feedback from "./pages/Feedback";
 
-const LazyLandingPage = lazy(() => import("./pages/LandingPage"));
 
 const router = (
     <Routes>
-        <Route path="/" element={<MainPage />} />
+        <Route path="/" element={<Main />} />
         <Route path="/simulation" element={<Simulation />} />
         <Route path="/solution" element={<Solution />} />
-        <Route path="about" element={
-        <Suspense fallback={<Loading />}>
-            <LazyLandingPage />
-        </Suspense>
-        } />
+        <Route path="/feedback" element={<Feedback />} />
+        <Route path="/about" element={<Landing />} />
     </Routes>
 );
 

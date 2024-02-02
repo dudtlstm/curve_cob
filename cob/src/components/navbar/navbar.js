@@ -7,14 +7,14 @@ const Navbar = () => {
     return (
         <nav>
             <div className="nav">
-                <Link to="/">
+                <Link to="/about">
                     <img className="logoImage" src={logo} alt="COB Logo"/>
                 </Link>
                 <div className="links">
                     <Link to="/">주제 선택</Link>
                     <Link to="/simulation">시뮬레이션</Link>
                     <Link to="/solution">솔루션</Link>
-                    <Link to="/faq">고객 지원</Link>
+                    <Link to="/feedback">피드백</Link>
                     <Link to="/about">서비스 소개</Link>
                 </div>
             </div>
