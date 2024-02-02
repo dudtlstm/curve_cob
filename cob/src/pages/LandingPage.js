@@ -1,5 +1,6 @@
 import React from "react";
 import '../style/LandingPage.css';
+import { Link } from 'react-router-dom';
 
 // 사진
 import checkImage from '../assets/images/body_image_check.png';
@@ -11,6 +12,7 @@ import noticeImage from '../assets/images/body_image_notice.png';
 // import chattingImage from '../assets/images/body_image_chatting.png';
 // import choiceImage from '../assets/images/body_image_choice.png';
 import characteristicImage from '../assets/images/characteristic.png';
+import gotoMainButton from '../assets/images/gotoMainButton.png';
 
 export default function LandingPage() {
     return(
@@ -82,6 +84,17 @@ export default function LandingPage() {
                 </div> */}
                 <img src={characteristicImage} alt="특징" className="characteristic"/>
             </div>
+            <div className="last-text">
+                AI 직장인과의 대화를<br/>
+                지금 시작해보세요.
+            </div>
+            <Link to="/">
+            <img 
+                src={gotoMainButton} 
+                alt="메인버튼" 
+                className="gotoMainButton"
+            />
+        </Link>
         </div></>
     );
 }
