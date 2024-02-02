@@ -8,7 +8,7 @@ export default function Simulation() {
     const [messages, setMessages] = useState([]);
     const [inputMessage, setInputMessage] = useState('');
 
-    const chatContainerRef = useRef(null);
+    const chatEndRef = useRef(null);
 
     const handleSendMessage = (e) => {
         e.preventDefault();
@@ -18,9 +18,10 @@ export default function Simulation() {
 
             // 새 메시지가 추가되고, 화면 업데이트가 된 후에 스크롤을 맨 아래로 이동시킵니다.
             setTimeout(() => {
-                chatContainerRef.current.scrollTop = chatContainerRef.current.scrollHeight;
+                chatEndRef.current.scrollTop = chatEndRef.current.scrollHeight;
             }, 0);
         }
+        chatEndRef.current?.scrollIntoView({ behavior: 'smooth' });
     };
 
     return (
@@ -60,7 +61,7 @@ export default function Simulation() {
                 </div>
             </form>
             
-            <div className="simulation-chat" ref={chatContainerRef}>
+            <div className="simulation-chat">
                 <div className="tutor-container">
                     <img src={tutorImage} alt="AI Coach" className="tutorImage" />
                     <span className="ai-coach-text">AI COACH</span>
@@ -83,6 +84,7 @@ export default function Simulation() {
                             <p>{message.text}</p>
                         </div>
                     ))}
+                    <div ref={chatEndRef}/>
                 </div>
                     <form className="chat-input-form" onSubmit={handleSendMessage}>
                         <input 

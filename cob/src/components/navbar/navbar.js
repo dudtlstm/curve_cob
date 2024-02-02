@@ -11,11 +11,11 @@ const Navbar = () => {
                     <img className="logoImage" src={logo} alt="COB Logo"/>
                 </Link>
                 <div className="links">
-                    <Link to="/about">서비스 소개</Link>
-                    <Link to="/personal">개인 구매</Link>
-                    <Link to="/corporate">기업 구매</Link>
+                    <Link to="/">주제 선택</Link>
+                    <Link to="/simulation">시뮬레이션</Link>
+                    <Link to="/solution">솔루션</Link>
                     <Link to="/faq">고객 지원</Link>
-                    <Link to="/contact">회사 소개</Link>
+                    <Link to="/about">서비스 소개</Link>
                 </div>
             </div>
         </nav>
