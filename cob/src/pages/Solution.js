@@ -18,11 +18,12 @@ export default function Solution() {
     };
 
     useEffect(() => {
-        // 채팅이 추가될 때마다 스크롤을 맨 아래로 이동시키는 로직
-        if (chatContainerRef.current) {
-            chatContainerRef.current.scrollTop = chatContainerRef.current.scrollHeight;
-        }
-    }, [messages]); // 의존성 배열에 messages를 추가하여 메시지가 업데이트될 때마다 이 효과가 실행되도록 함
+        // 새 메시지가 추가될 때 전체 페이지의 스크롤을 맨 아래로 이동
+        window.scrollTo({
+        top: document.documentElement.scrollHeight,
+        behavior: 'smooth'
+        });
+    }, [messages]);
 
     return (            
             <div className="solution-chat">
