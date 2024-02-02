@@ -1,10 +1,28 @@
-import React from 'react';
+import React, { useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import '../style/Simulation.css';
 
 import tutorImage from '../assets/images/tutorImage.png';
 
 export default function Simulation() {
+    const [messages, setMessages] = useState([]);
+    const [inputMessage, setInputMessage] = useState('');
+
+    const chatContainerRef = useRef(null);
+
+    const handleSendMessage = (e) => {
+        e.preventDefault();
+        if (inputMessage.trim() !== '') {
+            setMessages(messages => [...messages, { text: inputMessage, sender: 'right', id: Date.now() }]);
+            setInputMessage('');
+
+            // 새 메시지가 추가되고, 화면 업데이트가 된 후에 스크롤을 맨 아래로 이동시킵니다.
+            setTimeout(() => {
+                chatContainerRef.current.scrollTop = chatContainerRef.current.scrollHeight;
+            }, 0);
+        }
+    };
+
     return (
         <div className="simulation-container">
             {/* <div className="simulation-header">
@@ -17,6 +35,7 @@ export default function Simulation() {
                     <select class="selects" id="userType">
                         <option value="customer">상사</option>
                         <option value="colleague">동료</option>
+                        <option value="employee">거래처 직원</option>
                     </select>
                 </div>
                 <div className="form-section">
@@ -33,12 +52,15 @@ export default function Simulation() {
                 <div className="form-section">
                     <label htmlFor="method">반응 방식 :</label><br/>
                     <select class="selects" id="method">
-                        <option value="visitType">직접 수렴하는 자세</option>
+                        <option value="favorable">호의적인 자세</option>
+                        <option value="stiff">완강한 자세</option>
+                        <option value="negative">부정적인 자세</option>
+                        <option value="gentle">온화한 자세</option>
                     </select>
                 </div>
             </form>
             
-            <div className="simulation-chat">
+            <div className="simulation-chat" ref={chatContainerRef}>
                 <div className="tutor-container">
                     <img src={tutorImage} alt="AI Coach" className="tutorImage" />
                     <span className="ai-coach-text">AI COACH</span>
@@ -56,10 +78,21 @@ export default function Simulation() {
                     <div className="chat-message-right">
                         <p>저번에 맡겨주신 코코주식회사가 기획서 작성과 관련해서 의견 여쭙고 싶은 게 있어요.</p>
                     </div>
-            </div>
-                    <div className="chat-input">
-                        <input type="text" placeholder="적절한 답변을 입력해보세요" />
-                    </div>
+                    {messages.map(message => (
+                        <div key={message.id} className={`chat-message-${message.sender} chat-message-enter`}>
+                            <p>{message.text}</p>
+                        </div>
+                    ))}
+                </div>
+                    <form className="chat-input-form" onSubmit={handleSendMessage}>
+                        <input 
+                        type="text" 
+                        placeholder="적절한 답변을 입력해보세요"
+                        value={inputMessage}
+                        onChange={(e) => setInputMessage(e.target.value)} 
+                        />
+                        <button type="submit" className="send-button">입력</button>
+                    </form>
             </div>
         </div>
     )
