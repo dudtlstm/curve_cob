@@ -1,0 +1,127 @@
+.simulation-container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.simulation-form {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid #ccc;
+    padding: 5rem 1rem 2rem 1rem;
+    box-sizing: border-box;
+}
+
+.form-section {
+    width: 100%;
+    margin: 1rem 0 1rem;
+}
+
+.selects {
+    width: 100%;
+    max-width: 250px;
+    margin: 1.5rem 0 0;
+    padding: 1rem 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: url('../assets/images/dropdown-arrow.png') no-repeat right 8px center; /* 드롭다운 화살표 이미지 */
+    background-size: 12px 12px;
+    cursor: pointer;
+}
+
+.selects, .selects option {
+    font-family: 'OneMobileTitle';
+    text-align: center;
+}
+
+.selects::-ms-expand {
+    display: none;
+}
+.selects:focus {
+    outline: none;
+    border-color: #666;
+}
+
+.selects option {
+    padding: 8px 16px;
+}
+
+/* 오른쪽 채팅 스타일 */
+.simulation-chat {
+    width: 90%;
+    padding: 20px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background-color: #f5f5f5;
+}
+
+.chat-message {
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+.chat-message:first-child {
+    border-top: none;
+}
+
+.chat-input input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: auto;
+}
+
+.chat-message-left {
+    background-color: #D9D9D9;
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 50px 50px 50px 0px;
+    margin: 10px 0;
+    max-width: 80%;
+    align-self: flex-start;
+    width: auto;
+}
+
+.chat-message-right {
+    background-color: #D9D9D9;
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 50px 50px 0px 50px;
+    margin: 10px 0;
+    max-width: 80%;
+    width: auto;
+    align-self: flex-end;
+}
+
+.tutor-container {
+    position: absolute; /* 위치 조정을 위해 절대 위치 설정 */
+    top: 20px; /* 상단에서의 위치 */
+    right: 20px; /* 우측에서의 위치 */
+    display: flex; /* 이미지와 텍스트를 위한 flex 컨테이너 */
+    flex-direction: column; /* 아이템을 수직으로 쌓음 */
+    align-items: center; /* 가운데 정렬 */
+}
+
+.tutorImage {
+    width: 100px; /* 이미지의 너비 */
+    height: 100px; /* 이미지의 높이 */
+    border-radius: 50%; /* 원형 이미지를 만들기 위해 둥근 모서리 설정 */
+    object-fit: cover; /* 이미지가 div에 꽉 차게 */
+    position: absolute; /* 위치 조정을 위해 절대 위치 설정 */
+    top: 20px; /* 상단에서의 위치 */
+    right: 20px; /* 우측에서의 위치 */
+    border: 3px solid #fff; /* 이미지 주변에 테두리 추가 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 이미지에 그림자 효과 추가 */
+}
+
+.ai-coach-text {
+    margin-top: 0.5rem; /* 이미지와 텍스트 사이의 간격 */
+    color: #000; /* 텍스트 색상 */
+    font-size: 1rem; /* 텍스트 크기 */
+    text-align: center; /* 가운데 정렬 */
+}

@@ -1,0 +1,66 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+import '../style/Simulation.css';
+
+import tutorImage from '../assets/images/tutorImage.png';
+
+export default function Simulation() {
+    return (
+        <div className="simulation-container">
+            {/* <div className="simulation-header">
+                <Link to="/somewhere" className="back-button">←</Link>
+                <span>COB</span>
+            </div> */}
+            <form className="simulation-form">
+                <div className="form-section">
+                    <label htmlFor="userType">대화 대상 :</label><br/>
+                    <select class="selects" id="userType">
+                        <option value="customer">상사</option>
+                        <option value="colleague">동료</option>
+                    </select>
+                </div>
+                <div className="form-section">
+                    <label htmlFor="scenario">시나리오 :</label><br/>
+                    <select class="selects" id="svenario">
+                        <option value="businesstrip-report">출장 보고</option>
+                        <option value="modify">수정 요청</option>
+                        <option value="mistake-report">실수 보고</option>
+                        <option value="work-sharing">업무 분담 요청</option>
+                        <option value="reject">요청 거절</option>
+                        <option value="question">업무 질문</option>
+                    </select>
+                </div>
+                <div className="form-section">
+                    <label htmlFor="method">반응 방식 :</label><br/>
+                    <select class="selects" id="method">
+                        <option value="visitType">직접 수렴하는 자세</option>
+                    </select>
+                </div>
+            </form>
+            
+            <div className="simulation-chat">
+                <div className="tutor-container">
+                    <img src={tutorImage} alt="AI Coach" className="tutorImage" />
+                    <span className="ai-coach-text">AI COACH</span>
+                </div>
+                <div className="chat-message-container">
+                    <div className="chat-message-left">
+                        <p>좋은 아침이에요, 지혜씨!</p>
+                    </div>
+                    <div className="chat-message-left">
+                        <p>업무 분담 관련해서 하실 이야기 있다고 들었어요.</p>
+                    </div>
+                    <div className="chat-message-right">
+                        <p>안녕하세요 팀장님!</p>
+                    </div>
+                    <div className="chat-message-right">
+                        <p>저번에 맡겨주신 코코주식회사가 기획서 작성과 관련해서 의견 여쭙고 싶은 게 있어요.</p>
+                    </div>
+            </div>
+                    <div className="chat-input">
+                        <input type="text" placeholder="적절한 답변을 입력해보세요" />
+                    </div>
+            </div>
+        </div>
+    )
+}
