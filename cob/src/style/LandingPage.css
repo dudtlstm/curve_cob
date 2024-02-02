@@ -38,9 +38,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    line-height: 3rem;
-    font-size: 1.5rem;
-    padding: 3.5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    padding: 5rem;
 }
 
 .body-section {
@@ -62,9 +62,64 @@
 }
 
 .body-text {
-    padding: 1.25rem 2rem;
+    padding: 5rem;
     text-align: center;
 }
+
+.body-left-text {
+    line-height: 3rem;
+    padding: 2rem;
+    text-align: left;
+}
+
+.bottom-text {
+    line-height: 3rem;
+    padding: 2rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.bottom-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 5rem 10rem;
+}
+
+.characteristic {
+    width: 70%;
+    padding: 0 10rem 10rem;
+}
+
+/* .feature-box {
+    width: 30.375rem;
+    background: #E7EDF4;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 1rem 0;
+    padding: 2rem;
+    text-align: center;
+}
+
+.feature-box img {
+    width: auto;
+    height: 6.25rem;
+    margin-bottom: 1rem;
+}
+
+.feature-box h3 {
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    font-weight: 200;
+    text-align: left;
+    padding: 0;
+}
+
+.feature-box p {
+    font-size: 1.5rem;
+    padding: 2rem 0 0 2rem;
+    text-align: left;
+    padding: 0;
+} */
 
 @media (max-width: 1000px) {
     html {
@@ -76,10 +131,10 @@
     }
 
     .body-image-check {
-        width: 8rem; /* 이미지 크기를 줄임 */
+        width: 8rem;
     }
 
-    .body-text {
+    .body-text, .body-left-text, .bottom-text {
         font-size: 2rem;
     }
 }
@@ -89,16 +144,15 @@
         font-size: 40%; /* 화면 크기가 더 작을 때 1rem을 6.4px로 조정 */
     }
 
-    /* 화면 크기가 480px 이하일 때의 스타일 변경 */
     .title, .subtitle {
         font-size: 3rem;
     }
 
     .body-image-check {
-        width: 6rem; /* 이미지 크기를 더 줄임 */
+        width: 6rem;
     }
 
-    .body-text {
+    .body-text, .body-left-text, .bottom-text {
         font-size: 2rem;
     }
 }
