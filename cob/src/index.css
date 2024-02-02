@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'OneMobileTitle';
+    src: url('./assets/fonts/ONE Mobile Title.ttf') format('truetype');
+}
+
+body {
+    font-family: 'OneMobileTitle';
+}
