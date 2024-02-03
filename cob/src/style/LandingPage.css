@@ -3,6 +3,28 @@
     src: url('../assets/fonts/GmarketSansTTFBold.ttf') format('truetype');
 }
 
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 .landing-container-top {
     display: flex;
     flex-direction: column;
@@ -20,6 +42,7 @@
     font-size: 5rem;
     line-height: 1.2;
     margin-bottom: 2vw;
+    animation: slideInFromLeft 1.5s ease-out forwards;
 }
 
 .subtitle {
@@ -27,6 +50,8 @@
     font-size: 5rem;
     border-top: 2px;
     padding-top: 1rem;
+    animation: slideInFromRight 2s ease-out forwards;
+    animation-delay: 1s;
 }
 
 .highlight {
@@ -106,7 +131,7 @@
 
 .gotoMainButton {
     width: 20%;
-    padding: 5rem 10rem 20rem;
+    padding: 5rem 10rem 15rem;
     margin: 0 auto;
     display: block;
 }
@@ -180,3 +205,4 @@
         opacity: 0;
     }
 }
+
