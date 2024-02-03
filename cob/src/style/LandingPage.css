@@ -134,6 +134,11 @@
     padding: 5rem 10rem 15rem;
     margin: 0 auto;
     display: block;
+    transition: transform 0.5s ease;
+}
+
+.gotoMainButton:hover {
+    transform: scale(1.02);
 }
 
 .aboutImage {
@@ -190,19 +195,21 @@
     width: 20rem;
     height: 20rem;
     background-image: radial-gradient(circle, #6D32DB, transparent);
-    animation: gradient-expand 3s ease-out infinite;
+    animation: gradient-expand 4s ease-out infinite;
     transform: translate(-50%, -50%);
     border-radius: 50%;
 }
 
 @keyframes gradient-expand {
     0% {
-        transform: scale(0) translate(-50%, -50%);
+        transform: scale(0.5) translate(-50%, -50%);
         opacity: 1;
     }
+    50% {
+        opacity: 0.5;
+    }
     100% {
-        transform: scale(10) translate(-50%, -50%);
+        transform: scale(5) translate(-50%, -50%);
         opacity: 0;
     }
 }
-
