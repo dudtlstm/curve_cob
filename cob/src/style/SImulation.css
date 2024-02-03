@@ -3,6 +3,7 @@
     position: relative;
     flex-direction: row;
     height: 100vh;
+    justify-content: space-between;
 }
 
 .simulation-form {
@@ -55,7 +56,7 @@ label {
     padding: 8px 16px;
 }
 
-/* 오른쪽 채팅 스타일 */
+/* 채팅 스타일 */
 .simulation-chat {
     width: 110%;
     padding: 2rem 2rem 3rem;

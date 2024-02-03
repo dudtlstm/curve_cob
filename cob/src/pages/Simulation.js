@@ -73,12 +73,12 @@ export default function Simulation() {
                     <div className="chat-message-left">
                         <p>업무 분담 관련해서 하실 이야기 있다고 들었어요.</p>
                     </div>
-                    <div className="chat-message-right">
+                    {/* <div className="chat-message-right">
                         <p>안녕하세요 팀장님!</p>
                     </div>
                     <div className="chat-message-right">
                         <p>저번에 맡겨주신 코코주식회사가 기획서 작성과 관련해서 의견 여쭙고 싶은 게 있어요.</p>
-                    </div>
+                    </div> */}
                     {messages.map(message => (
                         <div key={message.id} className={`chat-message-${message.sender} chat-message-enter`}>
                             <p>{message.text}</p>

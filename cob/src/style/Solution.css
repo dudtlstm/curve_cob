@@ -24,8 +24,8 @@
 }
 
 .solutiontutorImage {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -120,7 +120,7 @@
 .solution-message-left p,
 .solution-message-right p {
     line-height: 1.6;
-    margin: 0;
+    margin: 1rem;
 }
 
 .solution-message-enter {
