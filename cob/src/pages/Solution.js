@@ -50,7 +50,7 @@ export default function Solution() {
                 <form className="solution-input-form" onSubmit={handleSendMessage}>
                     <input 
                     type="text" 
-                    placeholder="적절한 답변을 입력해보세요"
+                    placeholder="궁금한 점을 입력해보세요"
                     value={inputMessage}
                     onChange={(e) => setInputMessage(e.target.value)} 
                     />

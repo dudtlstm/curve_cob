@@ -18,7 +18,7 @@ function Footer() {
             <p>백희정</p>
           </div>
           <div className="link-group">
-            <p className="link-title">Backend Developer</p>
+            <p className="link-title">Frontend Developer</p>
             <p>박영신</p>
           </div>
           <div className="link-group">

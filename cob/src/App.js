@@ -1,4 +1,3 @@
-// src/App.js
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 
@@ -7,6 +6,7 @@ import Footer from "./components/footer/footer";
 import router from "./router";
 
 function App() {
+  
   return (
     <Router>
       <div>

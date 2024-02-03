@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import '../style/LandingPage.css';
 import { Link } from 'react-router-dom';
 
@@ -13,7 +13,9 @@ import characteristicImage from '../assets/images/characteristic.png';
 import gotoMainButton from '../assets/images/gotoMainButton.png';
 import aboutImage from '../assets/images/aboutimage2.png';
 
+
 export default function LandingPage() {
+    
     return(
         <><div className="landing-container-top">
             <h1 className="title">
@@ -39,7 +41,7 @@ export default function LandingPage() {
             <div className="bottom-content">
                 <img src={characteristicImage} alt="특징" className="characteristic"/>
             </div>
-            <div className="last-text">
+            <div className="last-text animated-background">
                 AI 직장인과의 대화를<br/>
                 지금 시작해보세요.
             </div>
