@@ -10,7 +10,7 @@ import chatImage from '../assets/images/body_image_chat.png';
 import ligthbulbImage from '../assets/images/body_image_lightbulb.png';
 import noticeImage from '../assets/images/body_image_notice.png';
 import characteristicImage from '../assets/images/characteristic.png';
-import gotoMainButton from '../assets/images/gotoMainButton.png';
+import gotoTopicSelectButton from '../assets/images/gotoTopicSelectButton.png';
 import aboutImage from '../assets/images/aboutimage2.png';
 
 
@@ -47,9 +47,9 @@ export default function LandingPage() {
             </div>
             <Link to="/">
             <img 
-                src={gotoMainButton} 
+                src={gotoTopicSelectButton} 
                 alt="메인버튼" 
-                className="gotoMainButton"
+                className="gotoTopicSelectButton"
             />
         </Link>
         </div></>

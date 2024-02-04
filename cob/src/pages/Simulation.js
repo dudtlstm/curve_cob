@@ -16,7 +16,6 @@ export default function Simulation() {
             setMessages(messages => [...messages, { text: inputMessage, sender: 'right', id: Date.now() }]);
             setInputMessage('');
 
-            // 새 메시지가 추가되고, 화면 업데이트가 된 후에 스크롤을 맨 아래로 이동시킵니다.
             setTimeout(() => {
                 chatEndRef.current.scrollTop = chatEndRef.current.scrollHeight;
             }, 0);
