@@ -5,6 +5,7 @@
 ## 💪 Goal
 #### 1. Finishing front-end work within Feb 2024
 #### 2. Improving the design myself
+#### 3. Make at least one commit a day, except when i'm sick
 
 ## 🛠️ Tech
 
