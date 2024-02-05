@@ -17,7 +17,8 @@ import aboutImage from '../assets/images/aboutimage2.png';
 export default function LandingPage() {
     
     return(
-        <><div className="landing-container-top">
+        <>
+        <div className="landing-container-top">
             <h1 className="title">
                 나와 커리어를 잇다<br />
                 <span className="highlight">커</span>뮤니케이션 <span className="highlight">브</span>릿지
@@ -31,15 +32,15 @@ export default function LandingPage() {
             </h1>
         </div>
         <div className="landing-container-body">
-                <img src={aboutImage} alt="어바웃" className="aboutImage"/>
-            </div>
+
+        </div>
         <div className="landing-container-bottom">
             <div className="bottom-text">
                 이 외에도<br/>
                 커브는,
             </div>
             <div className="bottom-content">
-                <img src={characteristicImage} alt="특징" className="characteristic"/>
+                
             </div>
             <div className="last-text animated-background">
                 AI 직장인과의 대화를<br/>

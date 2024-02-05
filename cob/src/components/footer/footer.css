@@ -2,14 +2,14 @@
         background-color: #7C4DFF;
         color: white;
         text-align: center;
-        padding: 20px 0;
+        padding: 1rem 0;
     }
     
     .footer-content {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        max-width: 1200px;
+        max-width: 75rem;
         margin: 0 auto;
     }
     
@@ -23,7 +23,7 @@
         justify-content: flex-end;
         flex-wrap: wrap;
         flex-basis: 100%;
-        max-width: 400px;
+        max-width: 25rem;
     }
     
     .link-group {
