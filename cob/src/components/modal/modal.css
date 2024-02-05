@@ -1,0 +1,47 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 2.5rem;
+    border: 0.25rem solid #BE9BFF;
+    border-radius: 1rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1001;
+    text-align: center;
+
+    max-width: 30rem;
+    max-height: 70%;
+    width: auto;
+    height: auto;
+}
+
+.modal-close-button {
+    display: block;
+    margin-top: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5rem 1rem;
+    background-color: #6D32DB;
+    border: none;
+    border-radius: 0.65rem;
+    color: white;
+    cursor: pointer;
+    font-family: 'OneMobileTitle';
+    font-size: 1.25rem;
+}
+
+.modal-body-text {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}

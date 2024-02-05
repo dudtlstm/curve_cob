@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from 'react-router-dom';
+import Modal from '../components/modal/modal';
 import '../style/TopicSelect.css';
 
 import icon1 from '../assets/images/title_choose_icon1.png';
@@ -23,6 +24,7 @@ const icons = [
 
 export default function TopicSelect() {
     const [selected, setSelected] = useState(null);
+    const [isModalOpen, setIsModalOpen] = useState(false); // 모달 상태
     const navigate = useNavigate();
 
     const handleBoxClick = (id) => {
@@ -36,8 +38,14 @@ export default function TopicSelect() {
     const navigateToSimulation = () => {
         if(selected) {
             navigate('/simulation');
+        } else {
+            setIsModalOpen(true); // 모달 열기
         }
     };
+
+    const closeModal = () => {
+        setIsModalOpen(false);
+    }
 
     return(
         <>
@@ -63,6 +71,10 @@ export default function TopicSelect() {
             >
                 <span className="simulationButtonText">대화 연습하러 가기</span>
                 <img src={simulationImage} alt="시뮬레이션 버튼" className="simulationImage" />
+
+                <Modal isOpen={isModalOpen} close={closeModal}>
+                    원하는 대화 주제를 선택해주세요!
+                </Modal>
             </div>
         </>
     );

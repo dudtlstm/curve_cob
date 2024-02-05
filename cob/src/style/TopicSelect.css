@@ -63,6 +63,10 @@
     border: none;
 }
 
+.simulationButton.selected:hover {
+    transform: scale(1.02);
+}
+
 .simulationImage {
     width: 1.5rem;
     height: 1.5rem;
