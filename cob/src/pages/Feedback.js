@@ -3,13 +3,10 @@ import '../style/Feedback.css';
 
 import profileImage from "../assets/images/profile-image.png";
 
-import feedbackImage from "../assets/images/feedbackImage.png";
-
 export default function Feedback() {
     return (
         <div className="feedback-container">
-            <img src={feedbackImage} alt="피드백" class="feedbackImage"/>
-            {/* <div className="left-container">
+            <div className="left-container">
                 <div className="profile-section">
                     <img src={profileImage} alt="프로필 이미지" className="profile-image" />
                     <h1>이지혜님</h1>
@@ -57,7 +54,7 @@ export default function Feedback() {
                         <span className="keyword">#설득력 있는</span>
                     </div>
                 </div>
-            </div> */}
+            </div>
         </div>
     );
 }

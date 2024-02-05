@@ -39,6 +39,11 @@ label {
     cursor: pointer;
 }
 
+.selects:hover {
+    border-color: #9B51E0;
+    background-color: #EAEAEA;
+}
+
 .selects, .selects option {
     font-family: 'OneMobileTitle';
     text-align: center;
@@ -113,7 +118,7 @@ label {
 
 .send-button {
     padding: 0.75rem 1rem;
-    margin-left: 0.5rem; /* 버튼과 입력 필드 간의 간격 */
+    margin-left: 0.5rem;
     background-color: #ffffff;
     color: #6D32DB;
     border: none;

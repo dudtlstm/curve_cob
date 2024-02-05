@@ -11,7 +11,6 @@ import lightbulbImage from '../assets/images/body_image_lightbulb.png';
 import noticeImage from '../assets/images/body_image_notice.png';
 import characteristicImage from '../assets/images/characteristic.png';
 import gotoTopicSelectButton from '../assets/images/gotoTopicSelectButton.png';
-import aboutImage from '../assets/images/aboutimage2.png';
 
 
 export default function LandingPage() {
@@ -41,13 +40,22 @@ export default function LandingPage() {
         <div className="landing-container-body">
             <div className="group group1">
                 {/* 그룹1 */}
-                <Group imgSrc={checkImage} text={<>막상 말하려고만 하면, 입이 떨어지지 않은 당신<br /> 상사의 기분을 해치진 않을까 고민되지 않으신가요?</>} />
-                <Group imgSrc={chatImage} text={<>회사 동료에게 내 생각을 오해 없이 효과적으로<br /> 전달하고 싶으신 적 없으신가요?</>} />
-                <Group imgSrc={noticeImage} text={<>어렵기만 한 사회생활<br /> 커브에서 미리 연습해보세요!</>} />
+                <Group imgSrc={checkImage}/>
+                <Group imgSrc={chatImage}/>
+                <Group imgSrc={noticeImage}/>
             </div>
             <div className="group group2">
                 {/* 그룹2 */}
                 <div className="body-text large">
+                    막상 말하려고만 하면, 입이 떨어지지 않은 당신<br />
+                    상사의 기분을 해치진 않을까 고민되지 않으신가요?
+
+                    회사 동료에게 내 생각을 오해 없이 효과적으로<br />
+                    전달하고 싶으신 적 없으신가요?
+
+                    어렵기만 한 사회생활<br />
+                    커브에서 미리 연습해보세요!
+
                     사회생활 만렙 찍은 AI 직장인, <br />
                     이 친구에게 직접 배우는 그 비결을 소개합니다.
                 </div>
@@ -60,6 +68,14 @@ export default function LandingPage() {
             </div>
         </div>
         <div className="landing-container-bottom">
+            <div className="bottom group1">
+
+            </div>
+            <div className="bottom group2">
+                
+            </div>
+        </div>
+        <div className="landing-container-last">
             <div className="bottom-text">
                 이 외에도<br/>
                 커브는,
