@@ -6,16 +6,16 @@ function Footer() {
       <div className="footer-content">
         <div className="footer-section company">
           <h1>COB</h1>
-          <p>© 성신여자대학교 & 동국대학교 Team. 커브</p>
+          <p>© Team. Curve</p>
         </div>
         <div className="link-groups">
           <div className="link-group">
             <p className="link-title">Planner & PM</p>
-            <p>안수빈 모민서</p>
+            <p>000</p>
           </div>
           <div className="link-group">
             <p className="link-title">Planner & Designer</p>
-            <p>백희정</p>
+            <p>000</p>
           </div>
           <div className="link-group">
             <p className="link-title">Frontend Developer</p>
