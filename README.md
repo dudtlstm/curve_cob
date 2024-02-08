@@ -9,7 +9,7 @@
 
 ## 🛠️ Tech
 
-React, JavaScript
+##### React, JavaScript
 
 ## 🎯 Commit Convention
 
