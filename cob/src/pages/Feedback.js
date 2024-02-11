@@ -13,9 +13,8 @@ export default function Feedback() {
                     <div className="info">
                         <div className="info-item"><span>직급/직책</span>서비스 기획자</div>
                         <div className="info-item"><span>나이</span>24세</div>
-                        <div className="info-item"><span>연봉</span>3000만원</div>
                         <div className="info-item"><span>주거지</span>서울시 영등포구</div>
-                        <div className="info-item"><span>취미</span>영화, 여행 관람</div>
+                        <div className="info-item"><span>취미</span>영화, 여행</div>
                         <div className="info-item"><span>MBTI</span>ISTJ</div>
                     </div>
                 </div>
@@ -29,21 +28,26 @@ export default function Feedback() {
                     <div className="rank">33등/429명 (상위 8%)</div>
                 </div>
                 <div className="abilities">
-                    <div className="ability-item">
-                        <div className="ability-title">1st</div>
-                        <div className="ability-name">설득력</div>
-                        <div className="ability-bar"></div>
-                    </div>
-                    <div className="ability-item">
-                        <div className="ability-title">2nd</div>
-                        <div className="ability-name">논리력</div>
-                        <div className="ability-bar"></div>
-                    </div>
-                    <div className="ability-item">
-                        <div className="ability-title">3rd</div>
-                        <div className="ability-name">사교력</div>
-                        <div className="ability-bar"></div>
-                    </div>
+                    <div className="ability-title">대화 능력</div>
+                        <div className="ability-item">
+                            <div className="ability-subtitle">1st</div>
+                            <div className="ability-name">설득력</div>
+                            <div className="ability-bar"></div>
+                        </div>
+                        <div className="ability-item">
+                            <div className="ability-subtitle">2nd</div>
+                            <div className="ability-name">논리력</div>
+                            <div className="ability-bar"></div>
+                        </div>
+                        <div className="ability-item">
+                            <div className="ability-subtitle">3nd</div>
+                            <div className="ability-name">사고력</div>
+                            <div className="ability-bar"></div>
+                        </div>
+                </div>
+                <div className="reliability">
+                    <div className="reliability-title">신뢰도</div>
+                    <div className="reliability-content">업무분담 관련 대화를 매우 우수하게 완료하였으며, 분석 결과 해당 주제 대화 능력이 우수한 것으로 판단됩니다.</div>
                 </div>
                 <div className="keywords">
                     <div className="keywords-title">사용자 키워드</div>

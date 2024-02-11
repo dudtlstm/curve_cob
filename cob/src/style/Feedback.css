@@ -6,7 +6,7 @@
     width: 200px;
     color: white;
     background-color: #6D32DB;
-    padding: 2rem;
+    padding: 1.5rem;
     text-align: center;
 }
 
@@ -24,26 +24,51 @@
 }
 
 .info {
-    text-align: left;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 3rem
 }
 
 .info-item {
+    display: contents;
     margin-bottom: 1rem;
 }
 
 .info-item span {
-    font-weight: bold;
+    font-weight: lighter;
 }
 
 .right-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 2rem;
     flex: 2;
     padding: 20px;
 }
 
-.evaluation-grid {
+.evaluation, .abilities, .reliability, .keywords {
+    padding: 1rem;
+}
+
+.evaluation-title, .ability-title, .reliability-title, .keywords-title {
+    padding-bottom: 1rem;
+}
+
+.ability-bar {
+    width: 100%;
+    height: 10px;
+    background: #ccc;
+    margin-top: 5px;
+}
+
+.keywords-list {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 1rem;
 }
 
 .grid-item {
