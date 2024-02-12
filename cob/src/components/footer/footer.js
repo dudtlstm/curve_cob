@@ -9,22 +9,22 @@ function Footer() {
           <p>© Team. Curve</p>
         </div>
         <div className="link-groups">
-          <div className="link-group">
+          {/* <div className="link-group">
             <p className="link-title">Planner & PM</p>
             <p>000</p>
           </div>
           <div className="link-group">
             <p className="link-title">Planner & Designer</p>
             <p>000</p>
-          </div>
+          </div> */}
           <div className="link-group">
             <p className="link-title">Frontend Developer</p>
             <p>박영신</p>
           </div>
-          <div className="link-group">
+          {/* <div className="link-group">
             <p className="link-title">AI Developer</p>
-            <p>윤서현</p>
-          </div>
+            <p>000</p>
+          </div> */}
         </div>
       </div>
     </div>

@@ -13,7 +13,7 @@
 
 ## 🎯 Commit Convention
 
-- ✨ Feat : 새로운 기능 추가
+- ✨ feat : 새로운 기능 추가
 - 🎨 fix : 코드의 구조/형태 개선
 - 🐛 bug : 버그 수정
 - 🚑 ambulance : 긴급 수정

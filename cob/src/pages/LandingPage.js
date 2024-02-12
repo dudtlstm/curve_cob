@@ -46,16 +46,19 @@ export default function LandingPage() {
             </div>
             <div className="group group2">
                 {/* 그룹2 */}
-                <div className="body-text large">
+                <div className="text1">
                     막상 말하려고만 하면, 입이 떨어지지 않은 당신<br />
                     상사의 기분을 해치진 않을까 고민되지 않으신가요?
-
+                </div>
+                <div className="text2">
                     회사 동료에게 내 생각을 오해 없이 효과적으로<br />
                     전달하고 싶으신 적 없으신가요?
-
+                </div>
+                <div className="text3">
                     어렵기만 한 사회생활<br />
                     커브에서 미리 연습해보세요!
-
+                </div>
+                <div className="text4">
                     사회생활 만렙 찍은 AI 직장인, <br />
                     이 친구에게 직접 배우는 그 비결을 소개합니다.
                 </div>
@@ -88,12 +91,12 @@ export default function LandingPage() {
                 지금 시작해보세요.
             </div>
             <Link to="/">
-            <img 
-                src={gotoTopicSelectButton} 
-                alt="메인버튼" 
-                className="gotoTopicSelectButton"
-            />
-        </Link>
+                <img 
+                    src={gotoTopicSelectButton} 
+                    alt="메인버튼" 
+                    className="gotoTopicSelectButton"
+                />
+            </Link>
         </div></>
     );
 }
