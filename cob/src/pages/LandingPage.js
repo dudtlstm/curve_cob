@@ -22,6 +22,32 @@ export default function LandingPage() {
         </div>
     );
 
+    const [animated, setAnimated] = useState({
+        text1: false,
+        text2: false,
+        text3: false,
+        text4: false
+    });
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const checkAndAnimateText = (textId) => {
+                const element = document.querySelector(`.${textId}`);
+                const scrollPosition = window.scrollY + window.innerHeight;
+                if (element && scrollPosition > element.offsetTop && !animated[textId]) {
+                    element.classList.add('slide-up');
+                    setAnimated(prev => ({ ...prev, [textId]: true }));
+                }
+            };
+    
+            ['text1', 'text2', 'text3', 'text4'].forEach(checkAndAnimateText);
+        };
+    
+        window.addEventListener('scroll', handleScroll);
+
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, [animated]);
+
     return(
         <>
         <div className="landing-container-top">
