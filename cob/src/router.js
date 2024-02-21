@@ -1,5 +1,5 @@
 // src/router.js
-import React, { lazy, Suspense } from "react";
+import React from "react";
 import { Routes, Route } from "react-router-dom";
 import TopicSelect from "./pages/TopicSelect";
 import Landing from "./pages/LandingPage";
