@@ -1,6 +1,11 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../style/MainPage.css';
+import box1_image from '../assets/images/mainPage/box1_image.png';
+import box2_image from '../assets/images/mainPage/box2_image.png';
+import box3_image from '../assets/images/mainPage/box3_image.png';
+import box4_image from '../assets/images/mainPage/box4_image.png';
+import box5_image from '../assets/images/mainPage/box5_image.png';
 
 export default function MainPage() {
 
@@ -36,7 +41,7 @@ export default function MainPage() {
                         </div>
                         <div className="box-right">
                             <div className="main-body-image">
-
+                                <img src={box1_image} alt="box1"/>
                             </div>
                         </div>
                     </div>
@@ -52,7 +57,7 @@ export default function MainPage() {
                         </div>
                         <div className="box-right">
                             <div className="main-body-image">
-
+                                <img src={box2_image} alt="box2"/>
                             </div>
                         </div>
                     </div>
@@ -68,7 +73,7 @@ export default function MainPage() {
                         </div>
                         <div className="box-right">
                             <div className="main-body-image">
-
+                                <img src={box3_image} alt="box3"/>
                             </div>
                         </div>
                     </div>
@@ -84,7 +89,7 @@ export default function MainPage() {
                         </div>
                         <div className="box-right">
                             <div className="main-body-image">
-
+                                <img src={box4_image} alt="box4"/>
                             </div>
                         </div>
                     </div>
@@ -101,7 +106,7 @@ export default function MainPage() {
                     </div>
                     <div className="box-right">
                         <div className="main-body-image">
-
+                            <img src={box5_image} alt="box5"/>
                         </div>
                     </div>
                 </div>
