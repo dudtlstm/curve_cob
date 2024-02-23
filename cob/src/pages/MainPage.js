@@ -18,6 +18,10 @@ export default function MainPage() {
     const goToSimulation = () => {
         navigate('/simulation');
     }
+    
+    const goToSmallTalk = () => {
+        navigate('/smalltalk');
+    }
 
     return(
         <div className="main-container">
@@ -45,7 +49,7 @@ export default function MainPage() {
                             </div>
                         </div>
                     </div>
-                    <div className="main-body-box box2">
+                    <div className="main-body-box box2" onClick={goToSmallTalk}>
                         <div className="box-left">
                             <div className="main-body-desc">
                                 어색한 자리에서,

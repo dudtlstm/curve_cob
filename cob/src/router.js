@@ -7,11 +7,13 @@ import Simulation from "./pages/Simulation";
 import Solution from "./pages/Solution";
 import Feedback from "./pages/Feedback";
 import Main from "./pages/MainPage";
+import SmallTalk from "./pages/SmallTalk";
 
 
 const router = (
     <Routes>
         <Route path="/" element={<Main />} />
+        <Route path="/smalltalk" element={<SmallTalk />} />
         <Route path="/select-topic" element={<TopicSelect />} />
         <Route path="/simulation" element={<Simulation />} />
         <Route path="/solution" element={<Solution />} />
