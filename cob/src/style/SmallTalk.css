@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('../assets/fonts/GmarketSansTTFMedium.ttf') format('truetype');
+}
+
+.smalltalk-container {
+
+}
+
+.smalltalk-top {
+    background-color: #6D32DB;
+    padding: 10rem;
+}
+
+.smalltalk-top-text {
+    color: #ffffff;
+    text-align: center;
+    font-family: 'GmarketSansMedium';
+    font-size: x-large;
+    line-height: 35px;
+}
+
+.smalltalk-body {
+    margin-top: 2rem;
+}
+
+.smalltalk-body-content {
+    padding: 1rem 15rem 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.smalltalk-body-box {
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    height: 200px;
+}
+
+.box-title {
+    font-size: 15px;
+    padding-top: 1rem;
+}
+
+.box-content {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 15px;
+    background-color: #BE9BFF;
+    padding: 1rem 1rem 10rem;
+    margin: 2rem;
+
+    color: #ffffff;
+}
