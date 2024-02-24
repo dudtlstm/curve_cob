@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../style/SmallTalk.css';
 
 
 export default function SmallTalk() {
+
+    const [selectedContent, setSelectedContent] = useState(null);
+
+    const handleContentClick = (contentId) => {
+        setSelectedContent(contentId);
+    };
+
     return(
         <div className="smalltalk-container">
             <div className="smalltalk-top">
@@ -19,24 +26,18 @@ export default function SmallTalk() {
                             예술 관련 주제
                         </div>
                         <div className="box-content">
-                            <div className="content content1">
-                                뮤지컬
-                            </div>
-                            <div className="content content2">
-                                음악
-                            </div>
-                            <div className="content content3">
-                                독서
-                            </div>
-                            <div className="content content4">
-                                영화
-                            </div>
-                            <div className="content content5">
-                                전시회
-                            </div>
-                            <div className="content content6">
-                                게임
-                            </div>
+                            {['뮤지컬', '음악', '독서', '영화', '전시회', '게임'].map((item, index) => (
+                                <div
+                                    key={index}
+                                    className="content"
+                                    style={{
+                                        backgroundColor: selectedContent === item ? '#6D32DB' : '#BE9BFF',
+                                    }}
+                                    onClick={() => handleContentClick(item)}
+                                >
+                                    {item}
+                                </div>
+                            ))}
                         </div>
                     </div>
                     <div className="smalltalk-body-box">
@@ -44,24 +45,18 @@ export default function SmallTalk() {
                             사회경제 관련 주제
                         </div>
                         <div className="box-content">
-                            <div className="content content1">
-                                주식
-                            </div>
-                            <div className="content content2">
-                                환경
-                            </div>
-                            <div className="content content3">
-                                세계
-                            </div>
-                            <div className="content content4">
-                                ESG
-                            </div>
-                            <div className="content content5">
-                                CSR
-                            </div>
-                            <div className="content content6">
-                                경제
-                            </div>
+                            {['주식', '환경', '세계', 'ESG', 'CSR', '경제'].map((item, index) => (
+                                <div
+                                    key={index}
+                                    className="content"
+                                    style={{
+                                        backgroundColor: selectedContent === item ? '#6D32DB' : '#BE9BFF',
+                                    }}
+                                    onClick={() => handleContentClick(item)}
+                                >
+                                    {item}
+                                </div>
+                            ))}
                         </div>
                     </div>
                 </div>
