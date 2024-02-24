@@ -15,8 +15,8 @@ export default function MainPage() {
         navigate('/solution');
     };
 
-    const goToSimulation = () => {
-        navigate('/simulation');
+    const goToSelectTopic = () => {
+        navigate('/select-topic');
     }
     
     const goToSmallTalk = () => {
@@ -98,7 +98,7 @@ export default function MainPage() {
                         </div>
                     </div>
                 </div>
-                <div className="main-body-box box5" onClick={goToSimulation}>
+                <div className="main-body-box box5" onClick={goToSelectTopic}>
                 <div className="box-left">
                     <div className="main-body-desc">
                         실제 워킹스페이스처럼
