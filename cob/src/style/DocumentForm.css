@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('../assets/fonts/GmarketSansTTFMedium.ttf') format('truetype');
+}
+
+.document-container {
+
+}
+
+.document-top {
+    background-color: #6D32DB;
+    padding: 10rem;
+}
+
+.document-top-text {
+    color: #ffffff;
+    text-align: center;
+    font-family: 'GmarketSansMedium';
+    font-size: x-large;
+    line-height: 35px;
+}
+
+.document-search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.document-search-input {
+    flex-grow: 1;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 30px 0 0 30px;
+    outline: none;
+}
+
+.document-search-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #5f3dc4;
+    color: white;
+    font-size: 16px;
+    border-radius: 0 30px 30px 0;
+    border-color: #E7EDF4;
+    cursor: pointer;
+    outline: none;
+}
+
+.document-search-result {
+    text-align: center;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+.search-result {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    margin-top: 4.5rem;
+}
+
+.document-body {
+    margin-top: 2rem;
+}
+
+.document-body-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem 15rem 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.document-body-box {
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5rem 5rem 10rem 5rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    height: 200px;
+    background-color: #E7EDF4;
+}
+
+.document-body-box:hover {
+    background-color: #B0BEC5;
+    cursor: pointer;
+}
+
+.document-body-box.selected {
+    background-color: #BE9BFF;
+}
+
+.document-title {
+    font-size: 20px;
+    padding-top: 1rem;
+    font-family: 'OneMobileTitle';
+    font-weight: 100;
+}
