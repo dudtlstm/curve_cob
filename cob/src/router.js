@@ -8,6 +8,7 @@ import Solution from "./pages/Solution";
 import Feedback from "./pages/Feedback";
 import Main from "./pages/MainPage";
 import SmallTalk from "./pages/SmallTalk";
+import DocumentForm from "./pages/DocumentForm";
 
 
 const router = (
@@ -17,6 +18,7 @@ const router = (
         <Route path="/select-topic" element={<TopicSelect />} />
         <Route path="/simulation" element={<Simulation />} />
         <Route path="/solution" element={<Solution />} />
+        <Route path="/document-form" element={<DocumentForm />} />
         <Route path="/feedback" element={<Feedback />} />
         <Route path="/about" element={<Landing />} />
     </Routes>
