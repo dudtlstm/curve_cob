@@ -11,6 +11,10 @@ export default function MainPage() {
 
     const navigate = useNavigate();
 
+    const goToDocumentForm = () => {
+        navigate('/document-form');
+    }
+
     const goToSolution = () => {
         navigate('/solution');
     };
@@ -35,7 +39,7 @@ export default function MainPage() {
                 <div className="main-body-content">
                     <div className="main-body-box box1">
                         <div className="box-left">
-                            <div className="main-body-desc">
+                            <div className="main-body-desc" onClick={goToDocumentForm}>
                                 내용만 생각하세요,
                                 <br/> 양식은 커브가 찾아올게요
                             </div>
