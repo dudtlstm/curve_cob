@@ -19,6 +19,10 @@ export default function MainPage() {
         navigate('/solution');
     };
 
+    const goToLanguageGuide = () => {
+        navigate('/language-guide');
+    }
+
     const goToSelectTopic = () => {
         navigate('/select-topic');
     }
@@ -85,7 +89,7 @@ export default function MainPage() {
                             </div>
                         </div>
                     </div>
-                    <div className="main-body-box box4">
+                    <div className="main-body-box box4" onClick={goToLanguageGuide}>
                         <div className="box-left">
                             <div className="main-body-desc">
                                 모르는 전문 용어,
