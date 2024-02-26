@@ -9,6 +9,7 @@ import Feedback from "./pages/Feedback";
 import Main from "./pages/MainPage";
 import SmallTalk from "./pages/SmallTalk";
 import DocumentForm from "./pages/DocumentForm";
+import LanguageGuide from "./pages/LanguageGuide";
 
 
 const router = (
@@ -19,6 +20,7 @@ const router = (
         <Route path="/simulation" element={<Simulation />} />
         <Route path="/solution" element={<Solution />} />
         <Route path="/document-form" element={<DocumentForm />} />
+        <Route path="/language-guide" element={<LanguageGuide />} />
         <Route path="/feedback" element={<Feedback />} />
         <Route path="/about" element={<Landing />} />
     </Routes>
